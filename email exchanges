@@ -1,0 +1,51 @@
+# From Dr Cutlip 
+
+Dear Jia Wei,
+I don't still have access to the CORAL database and Dawn Snow (CORAL data manager) is no longer working with us at HCRI.  As I recall, the CEC classified death as cardiovascular, renal, non-cardiovascular and non-renal, and unknown. Non-cardiovascular/non-renal was defined as clear evidence of another cause of death. For purposes of the primary endpoint analysis the deaths classified as unknown cause of death were considered as cardiovascular rather than defaulting to a non-cardiovascular/non-renal cause. This is not uncommon in cardiovascular trials but does lead to the observation that you have made. Hope this is helpful.
+
+Best regards,
+
+Don Cutlip
+
+
+
+
+# From Dr Matsumoto 
+
+Dr. Bhalla and Dr. Tan:
+ 
+A couple additional points of clarifications and corrections with my email below:
+The Data Coordinating Center (DCC) for CORAL was led by Dr. Don Dutlip in Boston
+The Clinical Coordinating Center (CCC) for CORAL was co-lead by Dr. Chris Cooper and Dr. Tim Murphy
+Patients were randomized by the clinical sites and PIs – so the local PI would enroll a patient, presumably because the patient met the inclusion criteria.
+We were sent angiograms on patients enrolled in the trial from the clinical sites with assistance from the CCC – we had no role in the adjudication of whether or not the patient should have been enrolled into CORAL and/or excluded from the data analysis.  The DCC managed the data from the various corelabs.
+We just did the over-reads of the angiograms on enrolled patients and provided our blinded, corelab measurements of % stenosis – yes we found, based on our measurements, that a fair # of patients enrolled into CORAL had <50% stenosis by angio (I believe ~30% less than 60% and about 9% of patients had less than a 50% stenosis). 
+
+
+# Another from Dr Matsumoto 
+What does STEN1A to STEN8A mean? When a subject has multiple “STENxA” values (x from 1-8), which one is used for the analysis?
+We would measure each lesion 3 times and use the middle value of the 3 reads as the % stenosis for that lesion.  We did not think “an average” of the 3 values could be duplicated when we randomly QA’d our % stenosis reads.
+On occasion, we found that an investigator did not recognize the presence of a tandem stenosis at the hilum or in a branch renal artery and we’d measure a secondary lesion and make a comment for the DCC to add to their data base.  We thought that information would be helpful in any sub-analyses if that patient failed to improve post-stenting, as it could be secondary to persistent renovascular hypertension related to the more distal lesion that was untreated.
+Sometimes patients had bilateral RAS, so we’d measure both RASs and record them, even if only one side was stented.
+On occasions, an accessory renal artery was present and had a RAS >60%, but was either not recognized by the operator or was not treated.
+Of note, for this trial the smallest renal artery stent we had was 4 mm; so if the renal artery was less than or equal to 3.5 mm in diameter, the patient was supposed to be excluded from the trial.
+We did all of these measurements and provided the values and subjective information to the DCC who was tasked to manage from all the corelabs.
+I do not recall filling out any data for the columns labelled STEN5A-8A.  STEN4A was the value we submitted to the DCC as the % stenosis – the middle of the 3 measurements we obtained on each RAS.
+If STEN1A to STEN8A is from angiogram, SUBID 71, 76, 217 did not fit criteria but they are under Stent+medical therapy? I have no specific recollection of the SUBID 71, 76, 217 subjects.  It’s possible that these patients were enrolled by a site and stented and based upon our core lab measurements, with the degrees of stenosis being 8.08%, 20.8% and 34.33%.  I do recall some patients who were stented and clearly should not have been enrolled in CORAL and should not have been stented.  One case in particular was from Europe and I recall they placed a stent in a patient with a stenosis in the 30% range.  If these 3 patients were under stent + medical therapy, I suspect these 3 patients did receive a stent even though their stenoses were well below 60% but I can only clearly recall the one patient from a site in Europe.
+Image
+ 
+There are 1000s observation under the variable “stenosis” in the dataset v3_kidney. Which imaging method is used for this “stenosis” variable?  Not all patients underwent an angiogram because they were randomized to medical therapy.  A defined # of patient were enrolled into CORAL based upon the % stenosis based upon the CTA, MRA or duplex US.  Again, if they were randomized to medical therapy based upon their noninvasive screening study, then those patient’s % stenosis would have been based upon the noninvasive imaging test and not based upon an angiogram.  In theory, any patient who was enrolled in CORAL based upon a noninvasive imaging study and then randomized to stenting, should have had a diagnostic angiogram at the time of their stent procedure and those images would have been submitted to the Angio Corelab for determining the % stenosis.  In theory, if the investigator doing the angiogram saw that the % stenosis was less than 60%, the patient should not have stented and the patient should have been designated a failure of noninvasive screening.  Perhaps the 3 patients above (217, 76, 71) who has non-significant RAS who were stented might have been enrolled and treated based upon a CTA, MRA or duplex US. For(MRA/CTA/combination?) 
+All of our Corelab’s measurements were based upon submitted angiograms.  However, as noted in the previous paragraph, some patients were enrolled via noninvasive imaging (thus the need to have duplex US and CTA/MRA corelabs), but the gold standard for actual enrollment into CORAL was supposed to >60% stenosis based upon the catheter-based angiogram, with the ostium of the renal artery well profiled. 
+ 
+Note: at first the trial was set up to also require trans-lesion pressure gradient measurements and patients were supposed to have a greater than 20 mmHg systolic pressure gradient or a greater than 10% mean pressure gradient.  However, too many investigators complained that measuring pressures took too much time as well as many investigators did not know how to measure a trans-lesion pressure gradient.  Therefore, in the middle of the trial, pressure measurements were made “optional’ and we analyzed the pressure gradient data as best we could, but the pressure gradient data was clearly incomplete.  Please also recall, enrollment in CORAL started in 2005/6 so pressure measurement technology was not widely available for renal artery stenting.
+ 
+4. Under the supplementary file stents were placed successfully in 434 subjects (figure 1A), under the subgroup analysis (figure 1B), the total number of individuals under the “stent+medical therapy” arm is 429. Where are the other 5? (434-429)  You would have to query the DCC and Chris Cooper.  Again, we just did measurements of the renal arteries on angiograms that were sent to us and submitted our data to the DCC. Is it possible that 5 patients had 2 stents placed in their renal arteries (e.g. either 2 stents for 1 lesion) or bilateral renal stents?
+
+Given that total number of “stenosis” is 803 from subgroup analysis (Figure 2), and the unique observations in v3_angio is 750s, I tried combination of “Stenosis” from v3_angio, v3_kidney, lkdiney, rkidney, left_mra and right_mra to account for “stenosis” obtained from CTA and MRA.  But the number did not add up to 803. If I exclude subjects with stenosis <60 from angiography and stenosis = 100, I have fewer than 803 in total. Can you kindly let me know from which dataset(s) you used for the “stenosis” variable? Again, you will have to query the DCC on how they collated and managed the respective data from the various corelabs.  I had no access to the CTA/MRA or duplex US Corelab data at the time we measured the stenoses on angiography.  We tried our best to not allow bias enter into our measurements. 
+ 
+Having said that, it’s possible some patients had bilateral renal artery stenosis or a stenosis of an accessory AND main renal artery, so it’s possible one patient accounted for 2 renal artery stenosis measurements and data points.  It’s also possible that 53 patients were enrolled via the noninvasive lab study pathway and never had an angiogram since these 53 patients were randomized to medical therapy based upon a duplex US and/or CTA/MRA and never had an catheter-based angiogram.
+ 
+Thank you again for your time. I understand that these questions may delve into intricate details, I just hope to ensure the accuracy of our interpretation of the CORAL data to further extend the remarkable work of the CORAL study group. 
+ 
+Yours truly, 
+Jia Wei 
